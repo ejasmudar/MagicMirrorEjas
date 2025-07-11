@@ -1,6 +1,6 @@
 let config = {
   address: "0.0.0.0",
-  port: process.env.PORT || 8080,
+  port: 8080,
   ipWhitelist: [],
   language: "en",
   timeFormat: 24,
