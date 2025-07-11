@@ -318,6 +318,9 @@ function App () {
 
 		httpServer = new Server(config);
 		const { app, io } = await httpServer.open();
+		app.use("/config", require("express").static(path.resolve(global.root_path, "config")));
+
+		
 		Log.log("Server started ...");
 
 		const nodePromises = [];
