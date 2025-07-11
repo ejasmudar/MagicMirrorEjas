@@ -1,0 +1,119 @@
+/* Custom CSS Sample
+ *
+ * Change color and fonts here.
+ *
+ * Beware that properties cannot be unitless, so for example write '--gap-body: 0px;' instead of just '--gap-body: 0;'
+ */
+
+/* Uncomment and adjust accordingly if you want to import another font from the google-fonts-api: */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap'); */
+
+:root {
+  --color-text: #999;
+  --color-text-dimmed: #666;
+  --color-text-bright: #fff;
+  --color-background: black;
+
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto";
+
+  --font-size: 20px;
+  --font-size-small: 0.75rem;
+
+  --gap-body-top: 60px;
+  --gap-body-right: 60px;
+  --gap-body-bottom: 60px;
+  --gap-body-left: 60px;
+
+  --gap-modules: 30px;
+}
+
+.module.clock .time {
+  font-size: 200px;  /* Change this to your desired size */
+}
+
+.module.clock .date {
+  font-size: 30px;  /* Optional: change date size too */
+}
+
+
+.CX2 .period .eventTitle {
+  float: left;
+  max-width: var(--column-max-width);
+}
+
+.CX2 .period .eventTime {
+  float: right;
+}
+
+.CX2 .current .eventCount_0 {
+  display: none;
+}
+.CX2 .agenda .eventSub {
+  display: none;
+}
+.CX2 .daily .fullday .eventTime {
+  display: none;
+}
+.CX2 .slot > .slotContent {
+  background: none;
+}
+.CX2 .slot .event {
+  background: none;
+}
+.CX2 .slot .slotHeader {
+  background-color: inherit;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid #666;
+  line-height: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #999;
+}
+.CX2 .today .slotHeader * {
+  color: inherit;
+}
+.CX2 .event.fullday {
+  color: inherit;
+}
+.CX2 .slot .slotFooter {
+  display: none;
+}
+.CX2 .event {
+  border-left: #000000 solid;
+}
+.CX2 .event[data-calendar-name="Andre"],
+.CX2 .event[data-calendar-name="Andre Work"] {
+  /*color: #ce4138;*/
+  border-left: #ce4138 solid;
+}
+.CX2 .event[data-calendar-name="Anja"],
+.CX2 .event[data-calendar-name="Anja Work"] {
+  /*color: #c632ff;*/
+  border-left: #2cb825 solid;
+}
+.CX2 .event[data-calendar-name="Tobi"],
+.CX2 .event[data-calendar-name="Tobi Lernsax"],
+.CX2 .event[data-calendar-name="Tobi Shared"] {
+  /*color: #d2cf2a;*/
+  border-left: #d2cf2a solid;
+}
+
+.CX2 .event[data-busystatus="BUSY"] .eventTitle {
+  /* color: #c632ff; */
+}
+
+.CX2 .event[data-busystatus="OOF"] .eventTitle {
+  color: #400c54;
+}
+
+.CX2 .event[data-busystatus="FREE"] .eventTitle {
+  /* color: #444444; */
+}
+
+.CX2 .event[data-busystatus="TENTATIVE"] .eventTitle {
+  color: #444444;
+}
