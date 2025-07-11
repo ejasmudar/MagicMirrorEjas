@@ -289,6 +289,7 @@ function App () {
 	 */
 	this.start = async function () {
 		config = await loadConfig();
+		config.port = process.env.PORT || config.port || 8080;
 
 		Log.setLogLevel(config.logLevel);
 
